@@ -1,0 +1,15 @@
+[project]
+name = "keycloak-bugfix-agent"
+version = "0.1.0"
+description = "Autonomous multi-agent bug discovery -> fix -> review -> PR pipeline for Keycloak, built on the Strands Agents SDK."
+requires-python = ">=3.10"
+dependencies = [
+    "strands-agents",
+    "requests",
+    "pydantic",
+    "python-dotenv",
+    "boto3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
